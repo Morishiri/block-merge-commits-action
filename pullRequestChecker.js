@@ -26,7 +26,7 @@ class PullRequestChecker {
             const isMergeCommit = parents.length > 1;
 
             if (isMergeCommit) {
-                error(`Commit ${sha} is an merge commit: ${url}`);
+                error(`Commit ${sha} is a merge commit: ${url}`);
 
                 blockedCommits++;
             }
